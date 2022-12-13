@@ -8,3 +8,11 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+storeSum = Store.sum('annual_revenue')
+puts storeSum
+
+storeNum = Store.count
+revenuePer = storeSum /storeNum
+puts revenuePer
+
+puts Store.where("annual_revenue < ?", 1000000).count
